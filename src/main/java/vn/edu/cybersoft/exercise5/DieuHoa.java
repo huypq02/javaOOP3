@@ -21,6 +21,10 @@ public class DieuHoa extends ThietBiDien {
         Scanner sc = new Scanner(System.in);
         System.out.println("Nhap so gio hen tat: ");
         double soGio = sc.nextDouble();
+        if (soGio < 0) {
+            System.out.println("So gio khong hop le");
+            return;
+        }
         this.gioTat = java.time.LocalTime.now().getHour() + soGio;
     }
 
