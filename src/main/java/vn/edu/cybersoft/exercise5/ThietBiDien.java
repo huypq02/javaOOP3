@@ -1,6 +1,6 @@
 package vn.edu.cybersoft.exercise5;
 
-public class ThietBiDien {
+public abstract class ThietBiDien {
     private String ten;
     private double gia;
     private int soLuong;
